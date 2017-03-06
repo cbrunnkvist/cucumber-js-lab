@@ -11,7 +11,7 @@ defineSupportCode(function(context) {
   })
 
   When('(the player )(then )knocks down {numberOfPins:int} pin(s) {times:int} time(s)', function (numberOfPins, times) {
-    while (times-- > 0) {
+    while (times--) {
       this.game.roll(numberOfPins)
     }
   })
